@@ -1,0 +1,219 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+*{
+     padding: 0;
+     margin: 0;
+}
+
+body{
+     min-height: 100vh;
+     scroll-behavior: smooth;
+     background-color: #fff;
+     color: #191919;
+     font-family: "Work Sans",sans-serif;
+     -webkit-font-smoothing: antialiased;
+}
+
+a{
+     font-weight: 500;
+}
+
+.parallax{
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.strips-one {
+     width: 70px;
+     height: 1px;
+     position: relative;
+     margin: 20px 2px 19px;
+     border-top: 1px solid #d0d0d0;
+}
+
+#to-top {
+     z-index: 9999;
+     background: #000;
+     color:#ffffff;
+     position: fixed;
+     bottom: 16px;
+     right:32px;
+     width:50px;
+     height:50px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size:32px;
+     text-decoration: none;
+     opacity:0;
+     pointer-events: none;
+     transition: all .4s;
+   }
+   
+#to-top.active {
+     bottom:32px;
+     pointer-events: auto;
+     opacity:0.2;
+}
+
+.up-img-hover{
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	padding-top: 40px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+.up-img-hover:hover{
+	top: -10px;
+}
+
+img.zoom-img-hover {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+     overflow: hidden;
+}
+img.zoom-img-hover:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+/*
+HEADER
+*/
+
+header{
+     font-size: 18px;
+     font-weight: 500;
+}
+
+header a.navbar-brand img{
+     height: 28px;
+     width: auto;
+}
+
+header button.navbar-toggler i{
+     font-size: 28px;
+     color: #000;
+}
+
+/*
+MAIN
+*/
+
+section{
+     padding: 60px 0;
+     font-size: 20px;
+}
+
+section h2{
+     font-family: "Work Sans",sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     color: #191919;
+     font-size: 38px;
+     text-rendering: optimizeLegibility;
+}
+
+@media screen and (max-width: 991px){
+	section h2{
+		font-size: 32px;
+	}
+}
+
+/* top baner */
+section#top-baner-text{
+     padding: 110px 0;
+}
+
+@media screen and (max-width: 991px){
+	section#top-baner-text{
+		height: 90vh;
+		padding: auto 0;
+	}
+}
+
+section#top-baner-text h2{
+     font-size: 46px;
+}
+
+@media screen and (max-width: 991px){
+	section#top-baner-text h2{
+		font-size: 32px;
+	}
+}
+
+section#top-baner-text h2 span{
+     color: #651fff;
+}
+
+/* designing */
+section#designing{
+     background-color: transparent;
+     background-image: linear-gradient(180deg,#f3f3f3 0%,#fff 100%);
+}
+
+section#designing h2{
+	color: #fd7e14;
+}
+
+/* coding */
+section#coding h2{
+	color: #651fff;
+}
+
+/* publishing */
+section#publishing h2{
+	color: #03d2a4;
+}
+
+/* portfolio */
+section#portfolio{
+     background-color: #f5f5f5;
+}
+
+.btn-outline-castom{
+     --bs-btn-color: #651fff;
+     --bs-btn-border-color: #651fff;
+     --bs-btn-hover-color: #fff;
+     --bs-btn-hover-bg: #651fff;
+     --bs-btn-hover-border-color: #651fff;
+     --bs-btn-focus-shadow-rgb: 13, 110, 253;
+     --bs-btn-active-color: #fff;
+     --bs-btn-active-bg: #651fff;
+     --bs-btn-active-border-color: #651fff;
+     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+     --bs-btn-disabled-color: #651fff;
+     --bs-btn-disabled-bg: transparent;
+     --bs-btn-disabled-border-color: #651fff;
+     --bs-gradient: none;
+     font-size: 18px;
+     padding: 7px 13px;
+}
+
+/*
+FOOTER
+*/
+
+footer{
+     background-color: #191919;
+}
+
+footer ul.nav li.nav-item a.nav-link{
+    	color: #ffffff82;
+	text-decoration: none;
+    	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}     
