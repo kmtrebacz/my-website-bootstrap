@@ -16,12 +16,12 @@ if (screenWidth < 1024){
 
 function toggleNavbar() {
     if (!isNavbarOn) {
-        navbarBtn.innerHTML = '<i class="bi bi-x-lg"></i>'
-        navbarBtnBaner.innerHTML = '<i class="bi bi-x-lg"></i>'
+        navbarBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+        navbarBtnBaner.innerHTML = '<i class="fa-solid fa-xmark"></i>'
         isNavbarOn = true
     } else {
-        navbarBtn.innerHTML = '<i class="bi bi-list"></i>'
-        navbarBtnBaner.innerHTML = '<i class="bi bi-list"></i>'
+        navbarBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'
+        navbarBtnBaner.innerHTML = '<i class="fa-solid fa-bars"></i>'
         isNavbarOn = false
     }
 }
@@ -66,5 +66,5 @@ navbarBtnBaner.addEventListener('click', () => {
     }
 })
 
-navbarBtn.innerHTML = '<i class="bi bi-list"></i>'
-navbarBtnBaner.innerHTML = '<i class="bi bi-list"></i>'
+navbarBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'
+navbarBtnBaner.innerHTML = '<i class="fa-solid fa-bars"></i>'

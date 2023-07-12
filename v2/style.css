@@ -3,6 +3,23 @@
 @import 'tailwindcss/utilities';
 
 /* Your custom styles */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: 4px;
+}
+
+h2, h3, h4, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
 .drag-to-scroll {
     scrollbar-width: thin;
     scrollbar-color: var(--secondary) var(--primary);
@@ -15,6 +32,24 @@
 #to-top.active {
     pointer-events: auto;
     opacity: 0.9;
+}
+
+@media screen and (min-width: 1024px) {
+    #o-mnie-section {
+        background-image: url(./img/o-mnie-bg.png);
+    }
+    #oferta-section {
+        background-image: url(./img/oferta-bg.png);
+    }
+    #portfolio-section {
+        background-image: url(./img/portfolio-bg.png);
+    }
+    #opinie-section {
+        background-image: url(./img/opinie-bg.png); 
+    }
+    #kontakt-section {
+        background-image: url(./img/kontakt-bg.png);
+    }
 }
 
 @import 'tailwindcss/defaultTheme';
